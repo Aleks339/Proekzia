@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = 'proekzia'>
 
 <head>
 
@@ -115,23 +115,14 @@
                         
 
 
-              <div ng-app>
-                  <div>
-                    <img src = 'img/schoolchildren.jpg'>
-                    <h4><span>Ученикам</span></h4>
+              <div  ng-controller = "photoCtrl" class = "container">
+                  <div class = "row">
+                      <div ng-repeat = 'photo in photos' class = "item col-md-3 col-sm-6 col-xs-12">
+                        <img src = "{{photo.image}}" >
+                        <h4><span>{{photo.header}}</span></h4>
+                      </div>
                   </div>
-                    <img src = 'img/parents.jpg'>
-                    <h4><span>Родителям</span></h4>
-                </div>
-                <div>
-                    <img src = 'img/teachers.jpg'>
-                    <h4><span>Учителям</span></h4>
-                </div>
-                <div class="item">
-                    <img src = 'img/factories.jpg'>
-                    <h4><span>Предприятиям</span></h4>
-                </div>
-            </div>>
+            </div>
         </div>
     <!-- /.container -->
 
@@ -140,6 +131,30 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        var app = angular.module('proekzia', []);
+        app.controller('photoCtrl', function($scope){
+            
+            var photos=[
+            {
+               image:'img/schoolchildren.jpg',
+               header: 'Ученикам',
+            },{
+               image:'img/parents.jpg',
+               header: 'Родителям',
+            },{
+               image:'img/teachers.jpg',
+               header: 'Учителям',
+            },{
+               image:'img/factories.jpg',
+               header: 'Предприятиям',
+            }];
+            $scope.photos = photos;
+                    
+        })
+        
+    </script>
 
 </body>
 
