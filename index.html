@@ -12,6 +12,8 @@
     <title>Logo Nav - Start Bootstrap Template</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    
+    <script src = "vendor/lightbox/js/lightbox.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +27,8 @@
 
     
     <link rel ='stylesheet' href = "css/font-awesome.css">
+    
+    <link rel ='stylesheet' href = "vendor/lightbox/css/lightbox.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -121,7 +125,7 @@
               <div  ng-controller = "photoCtrl" class = "container">
                   <div class = "row">
                       <div ng-repeat = 'photo in photos' class = "item col-sm-3 col-xs-6">
-                        <img src = "{{photo.image}}" >
+                        <img src = "{{photo.image}}" class = "img img-thumbnail">
                         <h4><span>{{photo.header}}</span></h4>
                       </div>
                   </div>
