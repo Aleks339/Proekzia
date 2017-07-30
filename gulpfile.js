@@ -24,6 +24,7 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync'], function() {
+  gulp.watch('less/*.less', ['less']);
   gulp.watch('./**/*.html', browserSync.reload);
   gulp.watch('css/**/*.css', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
