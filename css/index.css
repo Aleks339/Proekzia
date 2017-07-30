@@ -1,0 +1,59 @@
+.navbar-nav li a {
+  text-transform: uppercase;
+}
+h3 {
+  text-transform: uppercase;
+}
+.jumbotron {
+  background-color: lightblue;
+  margin-top: -50px;
+}
+.jumbotron h4 {
+  font-size: 80%;
+}
+.jumbotron h3 {
+  font-size: 200%;
+}
+.jumbotron h3,
+.jumbotron h4 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+img {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+.carousel-inner .item img {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+}
+.carousel-inner .item h4 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+}
+.carousel-inner .item h4 span {
+  color: oldlace;
+  font: bold 24px/45px Sans-Serif;
+  letter-spacing: -1px;
+  padding: 10px;
+}
+.navbar-brand img {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}

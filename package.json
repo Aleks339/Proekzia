@@ -1,0 +1,27 @@
+{
+  "name": "startbootstrap-logo-nav.git",
+  "version": "1.0.0",
+  "description": "[Logo Nav](http://startbootstrap.com/template-overviews/logo-nav/) is a navigation bar template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template replaces the default navbar brand text with an image.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleks339/startbootstrap-logo-nav.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleks339/startbootstrap-logo-nav/issues"
+  },
+  "homepage": "https://github.com/Aleks339/startbootstrap-logo-nav#readme"
+}
