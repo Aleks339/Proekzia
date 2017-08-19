@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app = 'proekzia'>
+<html lang="en">
 
 <head>
 
@@ -9,11 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Logo Nav - Start Bootstrap Template</title>
-    
-    <script src= "bower_components/angular/angular.js"></script>
-    
-    <script src = "vendor/lightbox/js/lightbox.js"></script>
+    <title>Профориентация с Проекцией</title>
 
     <!-- Bootstrap Core CSS -->
     <link href= "bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -31,10 +27,6 @@
     <link rel ='stylesheet' href = "bower_components/font-awesome/css/font-awesome.css">
     
     <script src = "bower_components/jquery/dist/jquery.js"></script>
-    
-    <link href="vendor/lightbox/css/lightbox.css" rel="stylesheet">
-    
-    <script src = "vendor/lightbox/js/lightbox.js"></script>
     
       
     <script src = "bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -128,13 +120,43 @@
                         
 
 
-              <div  ng-controller = "photoCtrl" class = "container">
+              <div class = "container">
                   <div class = "row">
-                      <div ng-repeat = 'photo in photos' class = "item col-sm-3 col-xs-6">
-                        <a href="{{photo.image}}" data-lightbox="image" data-title="My caption" class = "lightbox">
-                            <img src = "{{photo.image}}" class = "img img-thumbnail">
-                            <h4><span>{{photo.header}}</span></h4>
-                        </a>                        
+                      <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/factories.jpg)">
+                            <h4><span>Предприятиям</span></h4>
+                            <ul class = "hidden_text">
+                                <li>Реализация корпоративной социальной ответственности</li>
+                                <li>PR производства</li>
+                                <li>GR и общественные связи</li>
+                                <li>Решение кадрового вопроса - потенциальные будущие сотрудники</li>
+                            </ul>                    
+                      </div>
+                       
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/parents.jpg)">
+                            <h4><span>Родителям</span></h4>
+                            <ul class = "hidden_text">
+                                <li>Комплексное профориентационное провещение с раннего возраста (5 - 11 класс)</li>
+                                <li>Готовый продукт - не нужно самим организовывать</li>
+                                <li>Формирование ответственной жизненной позиции</li>
+                            </ul>                     
+                      </div>
+                       
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/schoolchildren.jpg)">
+                            <h4><span>Ученикам</span></h4>
+                            <ul class = "hidden_text">
+                                <li>Посещение предприятий - это уникальная возможность увидеть законы точных дисциплин, которые преподают в школе - в жизни</li>
+                                <li>Повышение уровня информированности: знания о профессиях и специальностях, как их получить, отраслях промышленности в стране и в своём регионе - из первых рук.</li>
+                                <li>Осознанный выбор специализации к 11 классу</li>
+                            </ul>                     
+                      </div>
+                       
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/teachers.jpg)">
+                            <h4><span>Учителям</span></h4> 
+                            <ul class = "hidden_text">
+                                <li>Реализация корпоративной социальной ответственности</li>
+                                <li>Согласование учебного плана с рабочим графиком предприятия</li>
+                                <li>Развитие инновационного мышления школьников</li>
+                            </ul>                    
                       </div>
                   </div>
             </div>
@@ -146,41 +168,15 @@
             По всем вопросам звоните Насте Гузановой: +7(921)657-07-21
         </address>
     </footer>
-    
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <script>
-        var app = angular.module('proekzia', []);
-        app.controller('photoCtrl', function($scope){
-            
-            var photos=[
-            {
-               image:'img/schoolchildren.jpg',
-               header: 'Ученикам',
-               id: 'schoolchildren'
-            },{
-               image:'img/parents.jpg',
-               header: 'Родителям',
-               id: 'parents'
-            },{
-               image:'img/teachers.jpg',
-               header: 'Учителям',
-               id: 'teachers'
-            },{
-               image:'img/factories.jpg',
-               header: 'Предприятиям',
-               id: 'factories'
-            }];
-            $scope.photos = photos;
+<script>
+    $(document).ready(function(){
+        $(".item").hover({
+            $(".item").element().width() * 4;
+            $(".hidden_text").show();
+        })
     })
-    </script>
-
+</script>
 
 </body>
 
