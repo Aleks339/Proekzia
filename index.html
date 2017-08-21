@@ -122,7 +122,7 @@
 
               <div class = "container">
                   <div class = "row">
-                      <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/factories.jpg)">
+                      <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/factories.jpg); background-repeat: no-repeat">
                             <h4><span>Предприятиям</span></h4>
                             <ul class = "hidden_text">
                                 <li>Реализация корпоративной социальной ответственности</li>
@@ -132,7 +132,7 @@
                             </ul>                    
                       </div>
                        
-                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/parents.jpg)">
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/parents.jpg); background-repeat: no-repeat">
                             <h4><span>Родителям</span></h4>
                             <ul class = "hidden_text">
                                 <li>Комплексное профориентационное провещение с раннего возраста (5 - 11 класс)</li>
@@ -141,7 +141,7 @@
                             </ul>                     
                       </div>
                        
-                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/schoolchildren.jpg)">
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/schoolchildren.jpg); background-repeat: no-repeat">
                             <h4><span>Ученикам</span></h4>
                             <ul class = "hidden_text">
                                 <li>Посещение предприятий - это уникальная возможность увидеть законы точных дисциплин, которые преподают в школе - в жизни</li>
@@ -150,7 +150,7 @@
                             </ul>                     
                       </div>
                        
-                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/teachers.jpg)">
+                       <div class = "item col-sm-3 col-xs-6" style="background-image: url(img/teachers.jpg); background-repeat: no-repeat">
                             <h4><span>Учителям</span></h4> 
                             <ul class = "hidden_text">
                                 <li>Реализация корпоративной социальной ответственности</li>
@@ -170,12 +170,15 @@
     </footer>
 
 <script>
-    $(document).ready(function(){
-        $(".item").hover({
-            $(".item").element().width() * 4;
-            $(".hidden_text").show();
-        })
-    })
+//   $(document).ready(function(){
+//        $(".item").hover(function(){
+//            $(this).animate({
+//                width:$(this).width()*4,
+//                height:$(this).height()*4
+//            });
+//            $(".hidden_text").show();
+//        })
+//    })
 </script>
 
 </body>
