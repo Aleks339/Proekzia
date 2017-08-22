@@ -30,12 +30,13 @@ img {
 .item {
   cursor: pointer;
   max-width: 100%;
-  height: 100%;
-  min-height: 150px;
+  height: 150px;
   margin: auto;
+  transition: all 1s;
 }
 .item:hover {
-  width: 400%;
+  width: 800%;
+  height: 1200px;
 }
 .item h4 {
   position: absolute;
@@ -54,10 +55,17 @@ img {
   padding: 10px;
 }
 .item .hidden_text {
-  display: none;
-  font-size: 11px;
+  opacity: 0;
+  font-size: 38px;
   max-height: 100%;
+  text-align: left;
+  vertical-align: center;
   color: white;
+  transition: opacity 1s;
+  list-style: none;
+}
+.item .hidden_text:hover {
+  opacity: 1;
 }
 .navbar-brand img {
   width: 90%;
